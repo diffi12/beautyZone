@@ -1,0 +1,103 @@
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-latin-500italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
+}
+
+:root {
+	--bakery-landing-1-background: #faf4ea;
+	--bakery-landing-1-s1: #31261a;
+	--bakery-landing-1-c2: #819b57;
+	--bakery-landing-1-s3: #465929;
+	--bakery-landing-1-s4: #a18268;
+	--bakery-landing-1-c5: #cfcfbc;
+	--beauty-landing-2-background: #fff;
+	--beauty-landing-2-s2: #2b7fff;
+	--beauty-landing-2-c1: #011c44;
+	--beauty-landing-2-c3: #4a4a4a;
+	--beauty-landing-2-s4: #ffd02b;
+	--beauty-landing-2-s5: #747272;
+	--beauty-landing-2-c6: #011f4a;
+	--dog-landing-3-background: #fff;
+	--dog-landing-3-s1: #ff9f0e;
+	--dog-landing-3-s2: #fcb62a;
+	--dog-landing-3-c3: #fffaf3;
+	--dog-landing-3-c4: #181817;
+	--dog-landing-3-c5: #f1f3ff;
+	--dog-landing-3-c6: #839aa9;
+	--dog-landing-3-s8: #f9f9ff;
+	--dog-landing-3-c9: #d9a6ff;
+	--dog-landing-3-c10: #ff6e9f;
+}
+
+.address-icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* first-screen section */
+
+.first-screen{
+    background-image: url("img/first-screen__background.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+/* procedures section */
+
+.procedures-container{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+/* carousel */
+
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: var(--bakery-landing-1-s1);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--bakery-landing-1-s1);
+}
+
+.carousel-button:hover {
+  background-color: var(--beauty-landing-2-s2);
+  fill: var(--beauty-landing-2-background);
+  border: var(--beauty-landing-2-background);
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
+}
